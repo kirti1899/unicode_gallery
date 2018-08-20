@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<style type="text/css">
+		
+	</style>
+	<style type="text/css">.like0, .dislike0,.like1, .dislike1,.like2, .dislike2,.like01, .dislike01,.like02, .dislike02,.like03, .dislike03,.like04, .dislike04{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: lightgreen;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    margin-top: 10px;
+
+margin-bottom: 10px;}
+.qty1, .qty2 {
+    border: none;
+    width:20px;
+    background: transparent;
+}
+img:hover{
+	
+	transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript"> $(function () {
+         $(".like0").click(function () {
+             var input = $(this).find('.qty1');
+             input.val(parseInt(input.val())+ 1);
+    
+         });
+     $(".dislike0").click(function () {
+         var input = $(this).find('.qty2');
+         input.val(parseInt(input.val()) + 1);
+     });
+  });</script> 
+  <div class="container">
+  	<div class="row">
+  		<div class="col-sm-10"><center><h1>IMAGE GALLERY DESIGN</h1></center></div>
+  		<div class="col-sm-2"><button type="submit" style="float: right;"><a href="index.html">
+			LOGOUT</a></button></div>
+  	</div>
+  	
+
+  	<div class="row">
+  		<div class="col-sm-4">
+  			<a href="1b.jpg"><img src="1.jpg" style="width: 350px;
+	height: 250px;
+	transition: 1s;"></a> <br>
+	<div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+   <form>
+<textarea id="words" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords()" value="Enter" /> <br>
+<p id="para"></p>
+</form>
+
+<script type="text/javascript">
+function getwords() {
+  text = words.value;
+  document.getElementById("para").innerHTML += '<p>'+text
+  document.getElementById("words").value = "enter"
+}
+</script>
+  		</div>
+  	</div>
+  	  		<div class="col-sm-4">
+  			<a href="2b.jpg"><img src="2.jpg" style="width: 350px;
+	height: 250px;
+	transition: 1s;"></a> 
+	<div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="50" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="15" />
+    </a>
+     <form>
+<textarea id="words1" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords1()" value="Enter" /> <br>
+<p id="para1"></p>
+</form>
+
+<script type="text/javascript">
+function getwords1() {
+  text = words1.value;
+  document.getElementById("para1").innerHTML += '<p>'+text
+  document.getElementById("words1").value = "enter"
+}
+</script>
+
+  		</div>
+  		</div>
+  		<div class="col-sm-4">
+  			<a href="3b.jpg"><img src="3.jpg" style="width: 350px;
+	height: 250px;	transition: 1s;"></a>
+	<div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="65" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="5" />
+    </a>
+    <form>
+<textarea id="words2" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords2()" value="Enter" /> <br>
+<p id="para2"></p>
+</form>
+
+<script type="text/javascript">
+function getwords2() {
+  text = words2.value;
+  document.getElementById("para2").innerHTML += '<p>'+text
+  document.getElementById("words2").value = "enter"
+}
+</script>
+
+    
+  		</div>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-sm-4">
+  			<a href="4b.jpg"><img src="4.jpg" style="width: 350px;
+	height: 250px;
+	transition: 1s;"></a> <br>
+	<div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+    <form>
+<textarea id="words3" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords3()" value="Enter" /> <br>
+<p id="para3"></p>
+</form>
+
+<script type="text/javascript">
+function getwords3() {
+  text = words3.value;
+  document.getElementById("para3").innerHTML += '<p>'+text
+  document.getElementById("words3").value = "enter"
+}
+</script>
+
+    
+  		</div>
+  	</div>
+  	  		<div class="col-sm-4">
+  			<a href="5b.jpg"><img src="5.jpg" style="width: 350px;
+	height: 250px;
+	transition: 1s;;"></a>
+	<div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+    <form>
+<textarea id="words4" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords4()" value="Enter" /> <br>
+<p id="para4"></p>
+</form>
+
+<script type="text/javascript">
+function getwords4() {
+  text = words4.value;
+  document.getElementById("para4").innerHTML += '<p>'+text
+  document.getElementById("words4").value = "enter"
+}
+</script>
+
+     
+  		</div>
+  		</div>
+  		<div class="col-sm-4">
+  			<a href="6b.jpg"><img src="6.jpg" style="width: 350px;
+	height: 250px;	transition: 1s;"></a><div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+    <form>
+<textarea id="words5" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords5()" value="Enter" /> <br>
+<p id="para5"></p>
+</form>
+
+<script type="text/javascript">
+function getwords5() {
+  text = words5.value;
+  document.getElementById("para5").innerHTML += '<p>'+text
+  document.getElementById("words5").value = "enter"
+}
+</script>
+
+  		</div>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-sm-4">
+  			<a href="7b.jpg"><img src="7.jpg" style="width: 350px;
+	height: 250px;
+	transition: 1s;"></a> <br>
+	<div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+    <form>
+<textarea id="words6" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords6()" value="Enter" /> <br>
+<p id="para6"></p>
+</form>
+
+<script type="text/javascript">
+function getwords6() {
+  text = words6.value;
+  document.getElementById("para6").innerHTML += '<p>'+text
+  document.getElementById("words6").value = "enter"
+}
+</script>
+
+    
+  		</div>
+  	</div>
+  	  		<div class="col-sm-4">
+  			<a href="8b.jpg"><img src="8.jpg" style="width: 350px;
+	height: 250px;
+	transition: 1s;;"></a><div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+    <form>
+<textarea id="words7" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords7()" value="Enter" /> <br>
+<p id="para7"></p>
+</form>
+
+<script type="text/javascript">
+function getwords7() {
+  text = words7.value;
+  document.getElementById("para7").innerHTML += '<p>'+text
+  document.getElementById("words7").value = "enter"
+}
+</script>
+
+  		</div>
+  		</div>
+  		<div class="col-sm-4">
+  			<a href="9b.jpg"><img src="9.jpg" style="width: 350px;
+	height: 250px;	transition: 1s;"></a><div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+    <form>
+<textarea id="words8" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords8()" value="Enter" /> <br>
+<p id="para8"></p>
+</form>
+
+<script type="text/javascript">
+function getwords8() {
+  text = words8.value;
+  document.getElementById("para8").innerHTML += '<p>'+text
+  document.getElementById("words8").value = "enter"
+}
+</script>
+
+  		</div>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-sm-4">
+  			<a href="11b.jpg"><img src="11.jpg" style="width: 350px;
+	height: 250px;
+	transition: 1s;"></a> <br>
+	<div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+    <form>
+<textarea id="words9" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords9()" value="Enter" /> <br>
+<p id="para9"></p>
+</form>
+
+<script type="text/javascript">
+function getwords9() {
+  text = words9.value;
+  document.getElementById("para9").innerHTML += '<p>'+text
+  document.getElementById("words9").value = "enter"
+}
+</script>
+
+  		</div>
+  	</div>
+  	  		<div class="col-sm-4">
+  			<a href="12b.jpg"><img src="12.jpg" style="width: 350px;
+	height: 250px;
+	transition: 1s;;"></a><div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+    <form>
+<textarea id="words10" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords10()" value="Enter" /> <br>
+<p id="para10"></p>
+</form>
+
+<script type="text/javascript">
+function getwords10() {
+  text = words10.value;
+  document.getElementById("para10").innerHTML += '<p>'+text
+  document.getElementById("words10").value = "enter"
+}
+</script>
+
+   
+  		</div>
+  		</div>
+  		<div class="col-sm-4">
+  			<a href="14b.jpg"><img src="14.jpg" style="width: 350px;
+	height: 250px;	transition: 1s;"></a><div class="social"> 
+    <a class="like0"><i class="fa fa-thumbs-o-up"></i>  
+        Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="96" />
+    </a>
+    <a class="dislike0"><i class="fa fa-thumbs-o-down"></i> 
+        Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="23" />
+    </a>
+    <form>
+<textarea id="words11" rows="2" cols="40">Enter comment</textarea>
+<input type="button" onclick="getwords11()" value="Enter" /> <br>
+<p id="para11"></p>
+</form>
+
+<script type="text/javascript">
+function getwords11() {
+  text = words11.value;
+  document.getElementById("para11").innerHTML += '<p>'+text
+  document.getElementById("words11").value = "enter"
+}
+</script>
+
+
+  		</div>
+  		</div>
+  	</div>
+  </div>
+
+
+</body>
+</html>
